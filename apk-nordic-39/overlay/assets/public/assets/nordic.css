@@ -1,3 +1,5 @@
+/* Nachtmodus: Apple x Nordic nur bei Systemdunkelmodus (Handy im Nachtmodus) */
+@media (prefers-color-scheme: dark) {
 /* Print Home 2.0 – Apple x Nordic: Farbebene fuer die App */
 :root{--bg:#17232f!important;--card:#22323f!important;--label:#efeae0!important;--label2:#b9c0c6!important;--label3:#8b96a0!important;--sep:#ffffff1f!important;--fill:#ffffff14!important;--accent:#cfdcc0!important;color-scheme:dark}
 html,body,#root{background:#17232f!important}
@@ -69,3 +71,4 @@ input,textarea,select{color:#efeae0}input::placeholder,textarea::placeholder{col
 .glass{background:#17232fc7!important}
 .article-body{color:#dcd6ca!important}
 .article-body a{color:#cfdcc0!important}
+}
