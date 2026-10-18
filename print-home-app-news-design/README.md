@@ -14,3 +14,7 @@ Dateien: `index.html` und `app.js` gemeinsam auf einen HTTPS-Webspace laden, dan
 ## Testen
 - Demo-Modus: echte Produkte aus print-home.com, Checkout noch inaktiv.
 - Über GitHub Pages: Repo → Settings → Pages → Branch `main`, Ordner `/ (root)` → dann `…/print-home-app-news-design/` öffnen.
+
+## Android-APK
+Bei jedem Push baut GitHub automatisch eine installierbare APK (Workflow `.github/workflows/build-apk.yml`).
+Download: Repo → **Releases** → neueste „Print Home App News Design – Test-APK“ → `PrintHome-NewsDesign.apk`.
