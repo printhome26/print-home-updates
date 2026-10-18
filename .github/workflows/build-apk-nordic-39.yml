@@ -1,0 +1,58 @@
+name: APK bauen – Print Home 39 Apple x Nordic
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apk-nordic-39/**'
+      - '.github/workflows/build-apk-nordic-39.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Nordic-Dateien in die APK einsetzen
+        run: |
+          cp apk-nordic-39/PrintHome_39-original.apk work.apk
+          zip -q -d work.apk 'META-INF/*'
+          cd apk-nordic-39/overlay
+          zip -q -r ../../work.apk assets
+          cd ../..
+          unzip -l work.apk | grep -E 'nordic.css|index.html|capacitor.config'
+
+      - name: Ausrichten und signieren
+        run: |
+          BT=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -1)
+          echo "build-tools: $BT"
+          $BT/zipalign -f -p 4 work.apk aligned.apk
+          keytool -genkeypair -v -keystore ph.jks -storepass printhome -keypass printhome -alias printhome \
+            -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Print Home KG, O=Print Home KG, C=AT"
+          $BT/apksigner sign --ks ph.jks --ks-pass pass:printhome --key-pass pass:printhome --out PrintHome-39-Nordic.apk aligned.apk
+          $BT/apksigner verify --print-certs PrintHome-39-Nordic.apk | head -3
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PrintHome-39-Nordic-APK
+          path: PrintHome-39-Nordic.apk
+
+      - name: Als Download (Release) veröffentlichen
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: nordic-39-build-${{ github.run_number }}
+          name: Print Home App 39 – Apple x Nordic (Build ${{ github.run_number }})
+          body: |
+            Deine App-Version 39 mit den Farben des Shopify-Themes „Print Home 2.0 – Apple x Nordic“.
+            Vor der Installation die bisherige Print Home App deinstallieren (andere Signatur).
+          files: PrintHome-39-Nordic.apk
+          prerelease: true

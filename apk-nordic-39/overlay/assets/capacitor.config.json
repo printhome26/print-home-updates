@@ -1,0 +1,41 @@
+{
+	"appId": "com.printhome.app",
+	"appName": "Print Home",
+	"webDir": "dist",
+	"android": {
+		"allowMixedContent": false
+	},
+	"plugins": {
+		"StatusBar": {
+			"overlaysWebView": false,
+			"backgroundColor": "#17232F",
+			"style": "DARK"
+		},
+		"CapacitorHttp": {
+			"enabled": true
+		},
+		"CapacitorUpdater": {
+			"autoUpdate": false,
+			"autoDeleteFailed": true,
+			"autoDeletePrevious": true,
+			"resetWhenUpdate": true,
+			"appReadyTimeout": 15000,
+			"statsUrl": "",
+			"channelUrl": "",
+			"updateUrl": ""
+		},
+		"BackgroundRunner": {
+			"label": "com.printhome.app.check",
+			"src": "runners/background.js",
+			"event": "checkUpdates",
+			"repeat": true,
+			"interval": 30,
+			"autoStart": true
+		}
+	},
+	"cordova": {
+		"preferences": {
+			"AllowedSchemes": "shop.93747413324.app"
+		}
+	}
+}
