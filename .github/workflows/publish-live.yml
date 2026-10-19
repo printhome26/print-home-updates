@@ -1,0 +1,33 @@
+name: Live-Update veröffentlichen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'live/**'
+      - '.github/workflows/publish-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Version aus latest.json lesen
+        id: v
+        run: echo "version=$(python3 -c 'import json;print(json.load(open("live/latest.json"))["version"])')" >> "$GITHUB_OUTPUT"
+
+      - name: Release build-N anlegen
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ steps.v.outputs.version }}
+          name: Build ${{ steps.v.outputs.version }}
+          body: Live-Update der Print Home App
+          files: |
+            live/bundle.zip
+            live/latest.json
+          make_latest: true
