@@ -1,8 +1,8 @@
 {
-  "version": 59,
+  "version": 60,
   "nativeHash": "6cf101223a3d",
-  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-59/bundle.zip",
+  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-60/bundle.zip",
   "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-59/PrintHome-59.apk",
-  "notes": "Produktdetail: Marke Elavara/Lumara statt Vendor, Standard-Variante ausblenden",
-  "date": "2026-10-19T19:08:22.000Z"
+  "notes": "Empfehlungen aus dem Web (Shopify), Impressionen nur mit Einwilligung",
+  "date": "2026-10-19T20:01:25.000Z"
 }
