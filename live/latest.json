@@ -1,8 +1,8 @@
 {
-  "version": 65,
+  "version": 66,
   "nativeHash": "6cf101223a3d",
-  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-65/bundle.zip",
-  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-65/PrintHome-65.apk",
-  "notes": "Neu: Weitere Produkte laden automatisch beim Scrollen",
-  "date": "2026-10-20T14:50:02.000Z"
+  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-66/bundle.zip",
+  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-66/PrintHome-66.apk",
+  "notes": "Neu: Button im Startbanner heißt „Zur Print Home Welt“",
+  "date": "2026-10-20T14:53:18.000Z"
 }
