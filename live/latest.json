@@ -1,8 +1,8 @@
 {
-  "version": 64,
+  "version": 65,
   "nativeHash": "6cf101223a3d",
-  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-64/bundle.zip",
-  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-64/PrintHome-64.apk",
-  "notes": "Neu: Marken-Auswahl oben wird nur noch markiert, wenn du eine Marke wählst",
-  "date": "2026-10-20T14:47:54.000Z"
+  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-65/bundle.zip",
+  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-65/PrintHome-65.apk",
+  "notes": "Neu: Weitere Produkte laden automatisch beim Scrollen",
+  "date": "2026-10-20T14:50:02.000Z"
 }
