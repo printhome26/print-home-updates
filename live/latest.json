@@ -1,8 +1,8 @@
 {
-  "version": 67,
+  "version": 68,
   "nativeHash": "6cf101223a3d",
-  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-67/bundle.zip",
-  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-67/PrintHome-67.apk",
-  "notes": "Neu: Bei „Neuheiten“ wird kein Startbild mehr mit Print Home angezeigt",
-  "date": "2026-10-20T14:59:34.000Z"
+  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-68/bundle.zip",
+  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-68/PrintHome-68.apk",
+  "notes": "Neu: Offline stöbern und Warenkorb ändern (mit Konto-Schalter „Produkte offline speichern“), Hinweis bei fehlender Verbindung",
+  "date": "2026-10-20T15:16:33.000Z"
 }
