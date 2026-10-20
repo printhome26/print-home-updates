@@ -1,8 +1,8 @@
 {
-  "version": 68,
+  "version": 69,
   "nativeHash": "6cf101223a3d",
-  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-68/bundle.zip",
-  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-68/PrintHome-68.apk",
-  "notes": "Neu: Offline stöbern und Warenkorb ändern (mit Konto-Schalter „Produkte offline speichern“), Hinweis bei fehlender Verbindung",
-  "date": "2026-10-20T15:16:33.000Z"
+  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-69/bundle.zip",
+  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-69/PrintHome-69.apk",
+  "notes": "Neu: Neuheiten mit Hero-Karte wie bei Gutscheine, lädt beim Runterscrollen alle neuen Produkte",
+  "date": "2026-10-20T16:00:00.000Z"
 }
