@@ -1,8 +1,8 @@
 {
-  "version": 62,
+  "version": 63,
   "nativeHash": "6cf101223a3d",
-  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-62/bundle.zip",
-  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-62/PrintHome-62.apk",
-  "notes": "Neu: Produktbilder im Hochformat, Farbbilder bei Auswahl, Produkttext aufklappbar und Produktblatt per Wischen schließen",
-  "date": "2026-10-20T14:32:39.000Z"
+  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-63/bundle.zip",
+  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-63/PrintHome-63.apk",
+  "notes": "Neu: Neuheiten-Bereich mit den 8 neuesten Produkten, Bilder laden schneller, Produktblatt lässt sich wie eine Karte nach unten wegziehen, Farbbilder starten korrekt",
+  "date": "2026-10-20T14:43:02.000Z"
 }
