@@ -19,6 +19,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Versionsanzeige im Bundle prüfen
+        run: |
+          V=$(python3 -c 'import json;print(json.load(open("live/latest.json"))["version"])')
+          unzip -p live/bundle.zip 'assets/index-*.js' | grep -q "ug=\"1.5.$V\"" || { echo "Versionsanzeige im Bundle passt nicht zu latest.json ($V)"; exit 1; }
+
       - name: Version aus latest.json lesen
         id: v
         run: echo "version=$(python3 -c 'import json;print(json.load(open("live/latest.json"))["version"])')" >> "$GITHUB_OUTPUT"
