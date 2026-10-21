@@ -1,8 +1,8 @@
 {
-  "version": 70,
+  "version": 71,
   "nativeHash": "6cf101223a3d",
-  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-70/bundle.zip",
-  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-70/PrintHome-70.apk",
-  "notes": "Neu: Print Home Marke in den Shop-Farben (Dunkelgrün #2B4231) wie im Shopify-Theme",
-  "date": "2026-10-21T19:00:00.000Z"
+  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-71/bundle.zip",
+  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-71/PrintHome-71.apk",
+  "notes": "Neu: Journal zeigt Instagram- und Pinterest-Beiträge 1:1 (automatisch aktualisiert, auch offline sichtbar)",
+  "date": "2026-10-21T19:30:00.000Z"
 }
