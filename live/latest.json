@@ -1,8 +1,8 @@
 {
-  "version": 69,
+  "version": 70,
   "nativeHash": "6cf101223a3d",
-  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-69/bundle.zip",
-  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-69/PrintHome-69.apk",
-  "notes": "Neu: Neuheiten mit Hero-Karte wie bei Gutscheine, lädt beim Runterscrollen alle neuen Produkte",
-  "date": "2026-10-20T16:00:00.000Z"
+  "bundleUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-70/bundle.zip",
+  "apkUrl": "https://github.com/printhome26/print-home-updates/releases/download/build-70/PrintHome-70.apk",
+  "notes": "Neu: Print Home Marke in den Shop-Farben (Dunkelgrün #2B4231) wie im Shopify-Theme",
+  "date": "2026-10-21T19:00:00.000Z"
 }
