@@ -26,7 +26,11 @@ async function fetchImage(url, id) {
   const dest = path.join(IMG, name);
   if (!existsSync(dest)) {
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`Bild ${res.status}: ${url.slice(0, 80)}`);
+    if (!res.ok) {
+      // Signierte Instagram-CDN-Links laufen ab; der Beitrag bleibt ohne Bild im Feed.
+      console.warn(`Bild übersprungen (${res.status}): ${url.slice(0, 80)}`);
+      return null;
+    }
     await writeFile(dest, Buffer.from(await res.arrayBuffer()));
   }
   return `journal/img/${name}`;
