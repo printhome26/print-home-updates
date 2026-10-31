@@ -25,7 +25,14 @@ async function fetchImage(url, id) {
   const name = `${id}.${ext}`;
   const dest = path.join(IMG, name);
   if (!existsSync(dest)) {
-    const res = await fetch(url);
+    let res;
+    try {
+      res = await fetch(url);
+    } catch (err) {
+      // Netzwerkfehler (z. B. CDN nicht erreichbar) dürfen den Build nicht abbrechen.
+      console.warn(`Bild übersprungen (${err.cause?.code || err.message}): ${url.slice(0, 80)}`);
+      return null;
+    }
     if (!res.ok) {
       // Signierte Instagram-CDN-Links laufen ab; der Beitrag bleibt ohne Bild im Feed.
       console.warn(`Bild übersprungen (${res.status}): ${url.slice(0, 80)}`);
